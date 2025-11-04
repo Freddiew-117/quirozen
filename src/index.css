@@ -1,0 +1,98 @@
+:root {
+  /* Sea-blue and Golden Color Palette */
+  --sea-blue-dark: #0A4D68;
+  --sea-blue: #088395;
+  --sea-blue-light: #05BFDB;
+  --sea-blue-pale: #A0E7E5;
+  --golden: #D4AF37;
+  --golden-light: #F4D03F;
+  --golden-dark: #B8860B;
+  --charcoal-gray: #2C3E50;
+  --gray-medium: #566573;
+  --gray-light: #ECF0F1;
+  --text-black: #000000;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: var(--text-black);
+  background: linear-gradient(135deg, var(--sea-blue-dark) 0%, var(--sea-blue) 50%, var(--sea-blue-light) 100%),
+              url('/fondo.png') no-repeat center center fixed;
+  background-size: cover, cover;
+  background-blend-mode: overlay;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: var(--golden);
+  text-decoration: inherit;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--golden-light);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-black);
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.3em;
+  margin: 0 0 0.8rem 0;
+  font-weight: 600;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--golden);
+  outline-offset: 2px;
+}
